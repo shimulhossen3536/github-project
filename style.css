@@ -66,6 +66,7 @@ nav ul li{
         text-align: center;
         background: black;
         overflow-x: hidden;
+        position: fixed;
         transform: translateY(100vh);
         transition: transform 300ms ease-in-out;
     }
