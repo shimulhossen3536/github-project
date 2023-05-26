@@ -39,25 +39,3 @@ submit.addEventListener('submit', (event) =>{
 
 
 
-
-
-// Create the dynamic div element
-var dynamicDiv = document.createElement("div");
-dynamicDiv.id = "myDiv";
-dynamicDiv.innerHTML = "This is a permanent dynamic div element";
-
-// Store the element in localStorage
-localStorage.setItem("myDiv", dynamicDiv.outerHTML);
-// Get the stored element from localStorage
-var storedDiv = localStorage.getItem("myDiv");
-
-// Create a new div element and set its content to the stored element's HTML
-var restoredDiv = document.createElement("div");
-restoredDiv.innerHTML = storedDiv;
-
-// Add the restored element to the HTML page
-document.body.appendChild(restoredDiv);
-
-
-
-
