@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+
+
+    <style>
+        body {
+          background-image: url('image/bg.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          justify-self: center;
+          justify-items: center;
+        }
+        #exit{
+          background: none;
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          position: relative;
+          margin-top: 1px;
+          border: none;
+         margin-left: 60px;
+          
+        }
+        #exit .s1{
+          background: rgb(255, 0, 0);
+          width: 100%;
+          height: 2px;
+          transform: rotate(-45deg);
+          margin-top: -1px;
+          position: absolute;
+          
+        }
+        .s2{
+          background: rgb(255, 0, 0);
+          width: 100%;
+          height: 2px;
+          transform: rotate(45deg);
+          margin-top: 1px;
+          position: absolute;
+          
+        }
+      </style>
+</head>
+<body>
+    <form action=""id="login_form">
+      <h3><b style="color: red;font-style:italic;">L</b><b style="color: rgb(204, 0, 255);font-style:italic;">o</b><b style="color: rgb(0, 255, 221);font-style:italic;">g</b><b style="color: rgb(255, 187, 0);font-style:italic;">i</b><b style="color: rgb(0, 225, 255);font-style:italic;">n</b></h3>
+      <div id="error">Invalid email or password
+        <button id="exit">
+          <div class="s1"></div>
+          <div class="s2"></div>
+        </button>
+      </div>  
+      <br>
+      <input type="text"placeholder="  Username"id="username"><br>
+        <input type="password"placeholder="  Password"id="password"><br>
+        <button type="submit" value="Login">Login</button>
+
+        <div class="ud-line"><div></div>or<div class="div"></div></div>
+        <a href="https://www.facebook.com/?stype=lo&jlou=Afc-NwCv_rsmJojOZ-_oUP7XdWspBUSg4IKlyK-MyWma0XIQi26UE0JjoBhOnVvFTX-kneLcGWSC-WjYNf79DFZzZ2r0WOihRD_SQlbqaCaRhg&smuh=54004&lh=Ac-xVMdb82SdhHLf8ow"><div><img src="image/fb.png" alt="" srcset=""><h5  style="text-decoration: none;font-size:15px;margin-top:-25px;margin-left: 40px;">Login With Facebook</h5></div></a> 
+    </form>
+    
+
+
+
+
+
+
+
+
+    <script >
+
+
+      let login_form=document.getElementById("login_form");
+
+document.getElementById("login_form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  console.log('submit sucesfull');
+  let username=document.getElementById("username");
+  let password=document.getElementById("password");
+  if(username.value==""){
+ error.style.display="block"
+  }
+  else{
+    error.style.display="none"
+  }
+  if(password.value==""){
+error.style.display="block"
+  }
+  else{
+    error.style.display="block"
+  }
+
+
+})
+ let exit= document.getElementById("exit");
+ 
+ exit.onclick = function() {
+  // Code to be executed when the button is clicked
+  let error=document.getElementById("error")
+  console.log(error);
+  error.style.visibility="hidden"
+};
+
+
+    </script>
+</body>
+</html>

@@ -173,3 +173,80 @@ label .sp1,.sp2,.sp3{
     height: 2px;
     color: blue;
 }
+
+
+#login_form{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    justify-self: center;
+    opacity: 80%;
+    position: relative;
+    
+    
+}
+input[type="text"],input[type="password"]{
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+}
+button{
+    width: 80px;
+    justify-self: right;
+    background: black;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 170px;
+    margin-top: 6px;
+    color: #fff;
+}
+form a div{
+    background: rgb(15, 71, 226);
+    color:white;
+    padding: 5px;
+    text-align: left;
+    border-radius: 25px;
+    padding-left: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+form a div img{
+width: 30px;
+height: 30px;
+border-radius: 50px;
+margin-left: -5px;
+margin-top: -2;
+}
+.ud-line .div{
+width: 80px;
+background: black;
+height:1px;
+margin-top: -10px;
+display: flex;
+margin-left:200px;
+}
+.ud-line div{
+width: 80px;
+background: black;
+height:1px;
+margin-top: 51px;
+display: flex;
+margin-left:60px;
+}
+
+#error{
+    color: red;
+    background: none;
+    border-radius: 15px;
+    border: 1px solid red;
+    padding: 5px;
+    text-align: left;
+    display: none;
+}
