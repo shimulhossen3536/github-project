@@ -1,3 +1,8 @@
+alert("Hello world Iam Md shimul and you are in the my world ha ha ha you are all hacked")
+
+
+
+
 let email=document.getElementById('email');
 let names=document.getElementById('name');
 let comment=document.getElementById('comment');
